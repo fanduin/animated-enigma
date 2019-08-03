@@ -1,0 +1,29 @@
+[gd_scene format=2]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 14.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 556.0
+margin_bottom = 34.0
+
+[node name="Speed" type="Label" parent="MarginContainer/HBoxContainer"]
+margin_right = 496.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "100"
+
+[node name="Time" type="Label" parent="MarginContainer/HBoxContainer"]
+margin_left = 500.0
+margin_right = 536.0
+margin_bottom = 14.0
+text = "00:00"
