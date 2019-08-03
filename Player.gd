@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal move
+
 export (int) var speed = 200
 
 var velocity = Vector2()
