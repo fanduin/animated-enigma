@@ -16,7 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="GMTK 2019"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/Boot.tscn"
+boot_splash/image="res://Assets/Textures/candy.png"
 config/icon="res://Assets/Textures/icon.png"
 
 [display]
