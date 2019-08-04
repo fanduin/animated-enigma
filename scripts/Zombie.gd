@@ -16,6 +16,16 @@ export (float) var rotate_speed : = 1
 var path : = PoolVector2Array() setget set_path
 
 func _ready():
+	randomize()
+	var r = rand_range(0,1)
+	if r < 0.25:
+		position = Vector2(225, 195)
+	elif r < 0.5:
+		position = Vector2(1400, 195)
+	elif r < 0.75:
+		position = Vector2(1555, 1535)
+	else:
+		position = Vector2(115, 1500)
 	set_process(true)
 
 func _process(delta : float):

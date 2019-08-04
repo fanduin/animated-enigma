@@ -15,9 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="GMTK 2019"
+config/name="Only one life, run for it!"
 run/main_scene="res://scenes/Boot.tscn"
-boot_splash/image="res://Assets/Textures/candy.png"
 config/icon="res://Assets/Textures/icon.png"
 
 [display]

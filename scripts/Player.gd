@@ -11,7 +11,7 @@ var speed_ratio : float
 onready var speed = max_speed
 
 func _ready():
-	#Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 	animation_player.play("Run")
 	set_process(true)
 
@@ -27,7 +27,7 @@ func _process(delta):
 	velocity = move_and_slide(velocity)
 
 func _on_Pickup_body_entered(body):
-	speed = clamp(speed + 50, min_speed, max_speed)
+	speed = clamp(speed + 25, min_speed, max_speed)
 
 func _on_Zombie_player_dead():
 	animation_player.playback_speed = 1
