@@ -19,5 +19,6 @@ func _process(delta):
 	speed_label.text = "%d" % player.speed
 	time_label.text = "%02d : %02d" % [minutes, seconds]
 
-func _on_Zombie_body_entered(body):
+
+func _on_Zombie_player_dead():
 	set_process(false)

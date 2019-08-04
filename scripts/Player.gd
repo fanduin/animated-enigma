@@ -23,5 +23,5 @@ func _process(delta):
 func _on_Pickup_body_entered(body):
 	speed = clamp(speed + 50, min_speed, max_speed)
 
-func _on_Zombie_body_entered(body):
+func _on_Zombie_player_dead():
 	set_process(false)

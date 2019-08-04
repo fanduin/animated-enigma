@@ -1,5 +1,7 @@
 extends Area2D
 
+signal player_dead
+
 onready var nav_2d : Navigation2D = get_node("../Navigation2D")
 onready var line_2d : Line2D = get_node("../Line2D")
 onready var player	: KinematicBody2D = get_node("../Player")
@@ -18,8 +20,9 @@ func _process(delta : float):
 	move_along_path(move_distance)
 
 func _on_Zombie_body_entered(body):
-	print(body)
-	queue_free()
+	if body.get_name() == "Player":
+		emit_signal("player_dead")
+		queue_free()
 
 func move_along_path(distance : float) -> void:
 	print(distance)
