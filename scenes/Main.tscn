@@ -58,7 +58,6 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 429.998, 188.836 )
-scale = Vector2( 0.5, 0.5 )
 max_speed = 50
 speed_decay = 3
 
@@ -80,6 +79,9 @@ scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 9 )
 
 [node name="Line2D" type="Line2D" parent="."]
+visible = false
+width = 1.0
+default_color = Color( 1, 0.0352941, 0.0352941, 0.501961 )
 texture_mode = 3080292
 [connection signal="body_entered" from="Pickups/Pickup" to="Player" method="_on_Pickup_body_entered"]
 [connection signal="body_entered" from="Zombie" to="Zombie" method="_on_Zombie_body_entered"]

@@ -25,13 +25,10 @@ func _on_Zombie_body_entered(body):
 		queue_free()
 
 func move_along_path(distance : float) -> void:
-	print(distance)
 	var start_point : = position
 	for i in range(path.size()):
 		var distance_to_next : = start_point.distance_to(path[0])
 		if distance >= 0.0 and distance < distance_to_next:
-			print("Distance %d" % distance)
-			print("Next %d" % distance_to_next)
 			position = start_point.linear_interpolate(path[0], distance / distance_to_next)
 			break
 		elif distance < 0.0:
