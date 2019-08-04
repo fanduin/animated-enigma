@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 onready var animation_player : = $AnimationPlayer
-onready var tween : = $Tween
 
 export (int) var max_speed = 200
 export (int) var min_speed = 10
@@ -12,7 +11,7 @@ var speed_ratio : float
 onready var speed = max_speed
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 	animation_player.play("Run")
 	set_process(true)
 

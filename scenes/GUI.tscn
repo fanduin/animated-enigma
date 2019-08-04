@@ -17,7 +17,7 @@ custom_constants/margin_bottom = 10
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 566.0
-margin_bottom = 42.0
+margin_bottom = 24.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 margin_right = 556.0
