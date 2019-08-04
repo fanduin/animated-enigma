@@ -10,7 +10,6 @@ onready var time_label = get_node("MarginContainer/HBoxContainer/Time")
 func _ready():
 	time_start = OS.get_unix_time()
 	set_process(true)
-	print(player.position.x)
 
 func _process(delta):
 	time_now = OS.get_unix_time()
@@ -19,3 +18,6 @@ func _process(delta):
 	var seconds = elapsed % 60
 	speed_label.text = "%d" % player.speed
 	time_label.text = "%02d : %02d" % [minutes, seconds]
+
+func _on_Zombie_body_entered(body):
+	set_process(false)
