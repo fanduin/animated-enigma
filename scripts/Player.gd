@@ -31,5 +31,6 @@ func _on_Pickup_body_entered(body):
 	speed = clamp(speed + 50, min_speed, max_speed)
 
 func _on_Zombie_player_dead():
-	animation_player.stop(false)
+	animation_player.playback_speed = 1
+	animation_player.play("Dead")
 	set_process(false)

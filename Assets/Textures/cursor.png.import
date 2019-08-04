@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trees-and-bushes.png-1eec54791a6e49e9dca67575aa86aae0.stex"
+path="res://.import/cursor.png-f56beded6fa8d55e5168e6c2bd80ab0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/trees-and-bushes.png"
-dest_files=[ "res://.import/trees-and-bushes.png-1eec54791a6e49e9dca67575aa86aae0.stex" ]
+source_file="res://Assets/Textures/cursor.png"
+dest_files=[ "res://.import/cursor.png-f56beded6fa8d55e5168e6c2bd80ab0b.stex" ]
 
 [params]
 

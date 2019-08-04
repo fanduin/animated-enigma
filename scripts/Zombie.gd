@@ -37,7 +37,8 @@ func _process(delta : float):
 func _on_Zombie_body_entered(body):
 	if body.get_name() == "Player":
 		emit_signal("player_dead")
-		queue_free()
+		set_process(false)
+		#queue_free()
 
 func move_along_path(distance : float) -> void:
 	var start_point : = position
